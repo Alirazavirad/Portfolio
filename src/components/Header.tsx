@@ -8,7 +8,7 @@ function Header() {
     setWhichActive(text);
   };
   return (
-    <div className="sm:fixed sm:backdrop-blur-xl sm:px-12 px-5 z-10000 top-0 py-4  w-full">
+    <div className="fixed backdrop-blur-xl sm:px-12 px-5 z-10000 top-0 py-4  w-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="border-purple-500 flex items-center justify-center w-fit px-2 py-1.5 border-2 text-purple-500 rounded-md">

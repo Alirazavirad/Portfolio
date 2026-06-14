@@ -35,7 +35,7 @@ transition-all duration-300
       hover:border-purple-500/25
       flex flex-col gap-3
       items-center
-      min-w-[142px]
+      sm:min-w-[142px] min-w-[48.5%]
       
       rounded-xl px-5 py-2
       
@@ -55,7 +55,7 @@ transition-all duration-300
       hover:border-purple-500/25
       flex flex-col gap-3
       items-center
-      min-w-[142px]
+      sm:min-w-[142px] min-w-[48.5%]
       
       rounded-xl px-5 py-2
       
@@ -75,7 +75,7 @@ transition-all duration-300
       hover:border-purple-500/25
       flex flex-col gap-3
       items-center
-      min-w-[142px]
+      sm:min-w-[142px] min-w-[48.5%]
       
       rounded-xl px-5 py-2
       
@@ -95,7 +95,7 @@ transition-all duration-300
       hover:border-purple-500/25
       flex flex-col gap-3
       items-center
-      min-w-[142px]
+      sm:min-w-[142px] min-w-[48.5%]
       
       rounded-xl px-5 py-2
       
@@ -115,7 +115,7 @@ transition-all duration-300
       hover:border-purple-500/25
       flex flex-col gap-3
       items-center
-      min-w-[142px]
+      sm:min-w-[142px] min-w-[48.5%]
       
       rounded-xl px-5 py-2
       

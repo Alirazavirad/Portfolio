@@ -41,7 +41,7 @@ border border-white/10
 hover:border-purple-500/25
 flex flex-col gap-3
 items-center
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-5 py-2
 
@@ -59,7 +59,7 @@ duration-300
 bg-cyan-500/10
 border border-cyan-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 items-center
 rounded-xl px-4 py-2
 
@@ -78,7 +78,7 @@ duration-300
 bg-blue-500/10
 border border-blue-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-4 py-2
 items-center
@@ -96,7 +96,7 @@ duration-300
 bg-green-500/10
 border border-green-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 items-center
 rounded-xl px-4 py-2
 
@@ -114,7 +114,7 @@ duration-300
 bg-red-500/10
 border border-red-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 rounded-xl px-4 py-2
 items-center
 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]
@@ -131,7 +131,7 @@ duration-300
 bg-sky-500/10
 border border-sky-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 rounded-xl px-4 py-2
 items-center
 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]
@@ -148,7 +148,7 @@ duration-300
 bg-emerald-500/10
 border border-emerald-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 rounded-xl px-4 py-2
 items-center
 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]
@@ -165,7 +165,7 @@ duration-300
 bg-cyan-500/10
 border border-cyan-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 rounded-xl px-4 py-2
 items-center
 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]
@@ -182,7 +182,7 @@ duration-300
 bg-orange-500/10
 border border-orange-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 rounded-xl px-4 py-2
 items-center
 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]
@@ -199,7 +199,7 @@ duration-300
 bg-pink-500/10
 border border-pink-500/20
 hover:border-purple-500/25
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 rounded-xl px-4 py-2
 items-center
 hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]
@@ -224,7 +224,7 @@ border border-white/10
 hover:border-purple-500/25
 flex flex-col gap-3
 items-center
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-5 py-2
 
@@ -244,7 +244,7 @@ border border-white/10
 hover:border-purple-500/25
 flex flex-col gap-3
 items-center
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-5 py-2
 
@@ -264,7 +264,7 @@ border border-white/10
 hover:border-purple-500/25
 flex flex-col gap-3
 items-center
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-5 py-2
 
@@ -284,7 +284,7 @@ border border-white/10
 hover:border-purple-500/25
 flex flex-col gap-3
 items-center
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-5 py-2
 
@@ -304,7 +304,7 @@ border border-white/10
 hover:border-purple-500/25
 flex flex-col gap-3
 items-center
-min-w-[142px]
+sm:min-w-[142px] min-w-[48.5%]
 
 rounded-xl px-5 py-2
 
