@@ -43,24 +43,28 @@ function Header() {
             <span>تماس با من</span>
           </div>
         </div>
-        <div
-          className=" bg-emerald-500/10
-border border-emerald-500/20
-text-emerald-400
+        <a
+          href="/globe.svg"
+          download="Ali-RezaviRad-Resume.pdf"
+          className="
+  bg-emerald-500/10
+  border border-emerald-500/20
+  text-emerald-400
 
-hover:bg-emerald-500/15
-hover:border-emerald-500/40
-cursor-pointer
+  hover:bg-emerald-500/15
+  hover:border-emerald-500/40
 
-shadow-[0_0_20px_rgba(16,185,129,0.12)]
-hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]
+  shadow-[0_0_20px_rgba(16,185,129,0.12)]
+  hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]
 
-transition-all
-duration-300  gap-2 py-2 px-3 rounded-md flex items-center"
+  transition-all duration-300
+  gap-2 py-2 px-3 rounded-md
+  flex items-center
+  "
         >
           <span className="font-semibold">دانلود رزومه</span>
           <BsDownload />
-        </div>
+        </a>{" "}
       </div>
     </div>
   );

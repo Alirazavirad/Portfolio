@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <Main />
       <Projects />
-      {/* <Exps/> */}
+      <Exps/>
       <div className="sm:flex  sm:px-25 px-5 items-start mt-12 justify-between">
         <Skills />
         <div className="hidden w-[38%] sm:flex">
