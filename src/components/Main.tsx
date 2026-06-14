@@ -11,7 +11,7 @@ import { TbBrandCodesandbox } from "react-icons/tb";
 function Main() {
   return (
     <>
-      <div className="sm:mt-37 mt-27 px-5  sm:px-25 sm:flex sm:flex-row flex-col  sm:justify-between items-center">
+      <div className="sm:mt-37 mt-33 px-5  sm:px-25 sm:flex sm:flex-row flex-col  sm:justify-between items-center">
         <img
           src="/imgs/mee.png"
           alt="me"
