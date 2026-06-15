@@ -5,6 +5,10 @@ import Main from "@/components/Main";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Tools from "@/components/Tools";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "صفحه اصلی",
+};
 
 export default function Home() {
   return (
