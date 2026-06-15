@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden pt-[80px]">
+    <div className="overflow-x-hidden ">
       <section id="home">
         <Header />
       </section>
