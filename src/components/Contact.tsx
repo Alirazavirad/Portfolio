@@ -92,7 +92,7 @@ duration-300
           <p className="text-white">ایران - شیراز</p>
         </div>
         <div className="flex items-center w-full gap-4">
-          <div
+          <a href="https://github.com/Alirazavirad" target="_blank"
             className=" 
 bg-white/5
 border border-white/10
@@ -108,8 +108,8 @@ transition-all
 duration-300"
           >
             <GrGithub size={34} className="text-white" />
-          </div>
-          <div
+          </a>
+          <a href="https://www.instagram.com/ali.razaviiirad" target="_blank"
             className="
 bg-white/5
 border border-white/10
@@ -125,8 +125,8 @@ transition-all
 duration-300"
           >
             <FaInstagram size={34} className="text-white" />
-          </div>
-          <div
+          </a>
+          <a href="https://t.me/alirazavi002" target="_blank"
             className="
 bg-white/5
 border border-white/10
@@ -142,8 +142,8 @@ transition-all
 duration-300"
           >
             <FaTelegram size={34} className="text-white" />
-          </div>
-          <div
+          </a>
+          <a href="https://wa.me/989174148532" target="_blank"
             className="
 bg-white/5
 border border-white/10
@@ -159,7 +159,7 @@ transition-all
 duration-300"
           >
             <RiWhatsappFill size={34} className="text-white" />
-          </div>
+          </a>
         </div>
       </div>
     </div>

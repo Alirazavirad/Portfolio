@@ -1,12 +1,38 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsDownload } from "react-icons/bs";
 
 function Header() {
   const [whichActive, setWhichActive] = useState<string>("Home");
-  const Activate = async (text: string) => {
-    setWhichActive(text);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setWhichActive(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
+
+  
   return (
     <div className="fixed backdrop-blur-xl sm:px-12 px-5 z-10000 top-0 py-4  w-full">
       <div className="flex items-center justify-between">
@@ -18,31 +44,50 @@ function Header() {
         </div>
         <div className="sm:flex hidden items-center gap-12">
           <div
-            className={`text-white py-1 px-1  ${whichActive == "Home" && "border-b-2 border-purple-500"}`}
+            onClick={() => scrollToSection("home")}
+            className={`cursor-pointer text-white py-1 px-1 ${
+              whichActive === "home" && "border-b-2 border-purple-500"
+            }`}
           >
-            <span>خانه</span>
+            خانه
           </div>
+
           <div
-            className={`text-white py-1 px-1  ${whichActive == "About" && "border-b-2 border-purple-500"}`}
+            onClick={() => scrollToSection("contact")}
+            className={`cursor-pointer text-white py-1 px-1 ${
+              whichActive == "contact" && "border-b-2 border-purple-500"
+            }`}
           >
-            <span>درباره من</span>
+            درباره من
           </div>
+
           <div
-            className={`text-white py-1 px-1  ${whichActive == "Projects" && "border-b-2 border-purple-500"}`}
+            onClick={() => scrollToSection("projects")}
+            className={`cursor-pointer text-white py-1 px-1 ${
+              whichActive === "projects" && "border-b-2 border-purple-500"
+            }`}
           >
-            <span>پروژه ها</span>
+            پروژه ها
           </div>
+
           <div
-            className={`text-white py-1 px-1  ${whichActive == "Exps" && "border-b-2 border-purple-500"}`}
+            onClick={() => scrollToSection("exps")}
+            className={`cursor-pointer text-white py-1 px-1 ${
+              whichActive === "exps" && "border-b-2 border-purple-500"
+            }`}
           >
-            <span>تجربه ها</span>
+            تجربه ها
           </div>
+
           <div
-            className={`text-white py-1 px-1  ${whichActive == "Contact" && "border-b-2 border-purple-500"}`}
+            onClick={() => scrollToSection("contact")}
+            className={`cursor-pointer text-white py-1 px-1 ${
+              whichActive === "contact" && "border-b-2 border-purple-500"
+            }`}
           >
-            <span>تماس با من</span>
+            تماس با من
           </div>
-        </div>
+        </div>{" "}
         <a
           href="/globe.svg"
           download="Ali-RezaviRad-Resume.pdf"

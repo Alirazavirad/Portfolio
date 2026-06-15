@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -32,26 +33,64 @@ function Main() {
             </div>
           </div>
           <div className="flex items-center justify-between gap-2 mt-6">
-            <button className="pro w-full  py-3  text-center rounded-md">
+            <button
+              onClick={() => {
+                const el =
+                  document.getElementById("projects")
+                el?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="pro w-full  py-3  text-center rounded-md"
+            >
               مشاهده پروژه ها
             </button>
-            <button className="about w-full  py-3  text-center rounded-md">
-              مشاهده پروژه ها
+            <button
+              onClick={() => {
+                const el =
+                  document.getElementById("contact") ||
+                  document.getElementById("contact-mobile");
+
+                el?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="about w-full  py-3  text-center rounded-md"
+            >
+              تماس با من
             </button>
           </div>
           <div className="mt-8 flex items-center gap-3">
-            <div className="social-btn flex items-center justify-center">
+            <a
+              href="https://github.com/Alirazavirad"
+              className="social-btn flex items-center justify-center"
+            >
               <GrGithub color="white" size={30} />
-            </div>
-            <div className="social-btn flex items-center justify-center">
+            </a>
+            <a
+              href="https://wa.me/989174148532"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn flex items-center justify-center"
+            >
               <RiWhatsappFill color="white" size={28} />
-            </div>
-            <div className="social-btn flex items-center justify-center">
+            </a>{" "}
+            <a
+              href="https://t.me/alirazavi002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn flex items-center justify-center"
+            >
               <FaTelegram color="white" size={30} />
-            </div>
-            <div className="social-btn flex items-center justify-center">
+            </a>
+            <a
+              href="https://www.instagram.com/ali.razaviiirad"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn flex items-center justify-center"
+            >
               <FaInstagram color="white" size={30} />
-            </div>
+            </a>
           </div>
         </div>
         <img
@@ -64,7 +103,7 @@ function Main() {
         </div> */}
       </div>
       <div className="sm:px-35 px-5 flex-col sm:flex sm:flex-row items-center justify-between gap-4  mt-8">
-        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] w-full  flex items-center text-white font-bold">
+        <div className="boxes gap-10 px-4 py-5 sm:w-[250px]  justify-center  flex items-center text-white font-bold">
           <div className="boxIn p-3 rounded-full">
             <LuClock12 color="#A855F7" size={25} />
           </div>
@@ -73,7 +112,7 @@ function Main() {
             <p className="text-[#94A3B8]">سال تجربه</p>
           </div>
         </div>
-        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] w-full mt-3 flex sm:mt-0 items-center text-white font-bold">
+        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] justify-center w-full mt-3 flex sm:mt-0 items-center text-white font-bold">
           <div className="boxIn p-3 rounded-full">
             <FiFolder color="#A855F7" size={25} />
           </div>
@@ -82,7 +121,7 @@ function Main() {
             <p className="text-[#94A3B8]">پروژه انجام شده</p>
           </div>
         </div>
-        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] w-full mt-3 flex sm:mt-0 items-center text-white font-bold">
+        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] justify-center w-full mt-3 flex sm:mt-0 items-center text-white font-bold">
           <div className="boxIn p-3 rounded-full">
             <TbBrandCodesandbox color="#A855F7" size={25} />
           </div>
@@ -91,7 +130,7 @@ function Main() {
             <p className="text-[#94A3B8]">تکنولوژی اصلی</p>
           </div>
         </div>
-        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] w-full mt-3 sm:mt-0 flex items-center text-white font-bold">
+        <div className="boxes gap-10 px-4 py-5 sm:w-[250px] justify-center w-full mt-3 sm:mt-0 flex items-center text-white font-bold">
           <div className="boxIn p-3 rounded-full">
             <FiAward color="#A855F7" size={25} />
           </div>

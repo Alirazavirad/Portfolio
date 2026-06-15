@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import "react-toastify/dist/ReactToastify.css";
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -55,7 +55,9 @@ body {
     0 0 15px rgba(139, 92, 246, 0.2),
     0 0 35px rgba(139, 92, 246, 0.1);
 }
-
+.Toastify__toast {
+  font-family: inherit !important;
+}
 .boxes {
   background: #0f172a;
   border: 1px solid rgba(139, 92, 246, 0.15);
@@ -133,4 +135,7 @@ box-shadow:
 0 0 25px rgba(139,92,246,.15);
 
 transform: translateY(-2px);
+}
+html {
+  scroll-behavior: smooth;
 }
