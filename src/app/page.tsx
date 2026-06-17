@@ -33,7 +33,7 @@ export default function Home() {
       <div className=" sm:pb-20  sm:px-25 px-5  mt-10 ">
         <Tools />
       </div>
-      <section id="contact" className="flex sm:hidden pb-5 mt-5 px-5">
+      <section id="contact-mobile" className="flex sm:hidden pb-5 mt-5 px-5">
         <Contact />
       </section>
     </div>

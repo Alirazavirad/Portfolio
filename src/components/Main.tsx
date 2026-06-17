@@ -35,8 +35,7 @@ function Main() {
           <div className="flex items-center justify-between gap-2 mt-6">
             <button
               onClick={() => {
-                const el =
-                  document.getElementById("projects")
+                const el = document.getElementById("projects");
                 el?.scrollIntoView({
                   behavior: "smooth",
                 });
@@ -47,9 +46,11 @@ function Main() {
             </button>
             <button
               onClick={() => {
-                const el =
-                  document.getElementById("contact") ||
-                  document.getElementById("contact-mobile");
+                const isMobile = window.innerWidth < 640;
+
+                const el = document.getElementById(
+                  isMobile ? "contact-mobile" : "contact",
+                );
 
                 el?.scrollIntoView({
                   behavior: "smooth",
