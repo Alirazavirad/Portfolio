@@ -89,7 +89,7 @@ function Header() {
           </div>
         </div>{" "}
         <a
-          href="/globe.svg"
+          href="/resume.pdf"
           download="Ali-RezaviRad-Resume.pdf"
           className="
   bg-emerald-500/10
