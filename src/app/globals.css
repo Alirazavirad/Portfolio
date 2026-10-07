@@ -22,21 +22,28 @@
   font-family: "iransans";
   font-style: normal;
   font-weight: 400;
-  src:
-    url("/fonts/iransans/fa-Iran-sans-web-bold.woff2") format("woff2"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-      url("/fonts/iransans/fa-Iran-sans-web-bold.woff2") format("truetype");
+  src: url("/fonts/iransans/fa-Iran-sans-web-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "english";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/english/english.woff2") format("woff2");
 }
 
 body {
-  /* background: var(--background); */
-  /* color: var(--foreground); */
-  /* background: linear-gradient(135deg, #050816 0%, #0b1023 35%, #111827 100%); */
   background-color: #050816 !important;
-  font-family: "iransans";
   overflow-x: hidden !important;
 }
 
+body.font-fa {
+  font-family: "iransans";
+}
+
+body.font-en {
+  font-family: var(--font-geist-sans);
+}
 .social-btn {
   width: 48px;
   height: 48px;
@@ -114,27 +121,25 @@ body {
   transform: translateY(-2px);
 }
 
-.about{
-  background: rgba(15,23,42,.8);
+.about {
+  background: rgba(15, 23, 42, 0.8);
 
-border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
-color: #FFFFFF;
+  color: #ffffff;
 
-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
-box-shadow:
-0 4px 20px rgba(0,0,0,.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-.about:hover{
-  border-color: rgba(139,92,246,.4);
+.about:hover {
+  border-color: rgba(139, 92, 246, 0.4);
 
-background: rgba(139,92,246,.08);
+  background: rgba(139, 92, 246, 0.08);
 
-box-shadow:
-0 0 25px rgba(139,92,246,.15);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.15);
 
-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 html {
   scroll-behavior: smooth;

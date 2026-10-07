@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
-
+import { LanguageProvider } from "./LanguageProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,12 +24,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ToastContainer toastClassName="font-inherit" rtl position="bottom-center"/>
-        {children}
+        <LanguageProvider>
+          <ToastContainer
+            toastClassName="font-inherit"
+            rtl
+            position="bottom-center"
+          />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

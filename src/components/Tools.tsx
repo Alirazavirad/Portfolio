@@ -1,3 +1,5 @@
+"use client";
+import { useLanguage } from "@/app/LanguageProvider";
 import React from "react";
 import { BsGithub, BsStars } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
@@ -5,6 +7,7 @@ import { SiPostman, SiVercel } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 function Tools() {
+  const  {t,language} = useLanguage()
   return (
     <div
       className=" w-full sm:w-[60%] px-5 py-3
@@ -23,9 +26,9 @@ rounded-xl
 transition-all duration-300
 "
     >
-      <div className="flex items-center justify-end gap-2">
+      <div className="flex items-center  gap-2">
         <BsStars className="text-purple-400" size={25} />
-        <h2 className="text-white font-bold text-2xl">ابزار و تکنولوژی ها</h2>
+        <h2 className="text-white font-bold text-2xl">{t.tools.title}</h2>
       </div>{" "}
       <div className="flex w-full    flex-wrap items-center mt-7 gap-2">
         <div

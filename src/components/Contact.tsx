@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { BsPhone, BsStars, BsTelephone } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
@@ -5,11 +6,13 @@ import { ImLocation2 } from "react-icons/im";
 import { GrGithub } from "react-icons/gr";
 import { FaInstagram, FaTelegram } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
+import { useLanguage } from "@/app/LanguageProvider";
 
 function Contact() {
+  const { t, language } = useLanguage();
   return (
     <div
-      className='      w-full  px-5 py-3
+      className="      w-full  px-5 py-3
 bg-slate-900/50
 border border-purple-500/10
 
@@ -24,14 +27,16 @@ rounded-xl
 
 transition-all duration-300
 
-'
+"
     >
-      <div className="flex items-center justify-end gap-2">
+      <div className="flex items-center  gap-2">
         <BsStars className="text-purple-400" size={25} />
-        <h2 className="text-white font-bold text-2xl">تماس با من</h2>
+        <h2 className="text-white font-bold text-2xl">{t.contact.title}</h2>
       </div>{" "}
       <div className="mt-7 flex flex-col gap-4">
-        <div
+        <a
+          href="mailto:ali.razavi.rad002@gmail.com"
+          target="_blank"
           className="
 bg-white/5
 border border-white/10
@@ -50,8 +55,10 @@ duration-300
         >
           <CiMail size={25} className="text-purple-500" />
           <p className="text-white">ali.razavi.rad002@gmail.com</p>
-        </div>
-        <div
+        </a>
+        <a
+          href="tel:+989174148532"
+          target="_blank"
           className="
 bg-white/5
 border border-white/10
@@ -69,8 +76,8 @@ duration-300
 "
         >
           <BsTelephone size={25} className="text-purple-500" />
-          <p className="text-white">0917 414 8532</p>
-        </div>
+          <p className="text-white" dir={"ltr"}>0917 414 8532</p>
+        </a>
         <div
           className="
 bg-white/5
@@ -89,10 +96,15 @@ duration-300
 "
         >
           <ImLocation2 size={25} className="text-purple-500" />
-          <p className="text-white">ایران - شیراز</p>
+          <p className="text-white">
+            {" "}
+            {language === "fa" ? "ایران - شیراز" : "Iran - Shiraz"}
+          </p>
         </div>
         <div className="flex items-center w-full gap-4">
-          <a href="https://github.com/Alirazavirad" target="_blank"
+          <a
+            href="https://github.com/Alirazavirad"
+            target="_blank"
             className=" 
 bg-white/5
 border border-white/10
@@ -109,7 +121,9 @@ duration-300"
           >
             <GrGithub size={34} className="text-white" />
           </a>
-          <a href="https://www.instagram.com/ali.razaviiirad" target="_blank"
+          <a
+            href="https://www.instagram.com/ali.razaviiirad"
+            target="_blank"
             className="
 bg-white/5
 border border-white/10
@@ -126,7 +140,9 @@ duration-300"
           >
             <FaInstagram size={34} className="text-white" />
           </a>
-          <a href="https://t.me/alirazavi002" target="_blank"
+          <a
+            href="https://t.me/alirazavi002"
+            target="_blank"
             className="
 bg-white/5
 border border-white/10
@@ -143,7 +159,9 @@ duration-300"
           >
             <FaTelegram size={34} className="text-white" />
           </a>
-          <a href="https://wa.me/989174148532" target="_blank"
+          <a
+            href="https://wa.me/989174148532"
+            target="_blank"
             className="
 bg-white/5
 border border-white/10

@@ -1,3 +1,5 @@
+"use client";
+import { useLanguage } from "@/app/LanguageProvider";
 import React from "react";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsStar, BsStars } from "react-icons/bs";
@@ -8,6 +10,7 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiGraphql, SiMongodb, SiNestjs, SiTypescript } from "react-icons/si";
 
 function Skills() {
+  const { t } = useLanguage();
   return (
     <div
       className="w-full sm:w-[60%] px-5 py-3
@@ -26,12 +29,12 @@ rounded-xl
 transition-all duration-300
 "
     >
-      <div className="flex items-center justify-end gap-2">
+      <div className="flex items-center  gap-2">
         <BsStars className="text-purple-400" size={25} />
-        <h2 className="text-white font-bold text-2xl">مهارت‌ها</h2>
+        <h2 className="text-white font-bold text-2xl">{t.skills.title}</h2>
       </div>{" "}
-      <div className="text-right mt-4">
-        <p className="text-purple-500">مهارت های فنی</p>
+      <div className=" mt-4">
+        <p className="text-purple-500">{t.skills.tech}</p>
       </div>
       <div className="flex w-full border-b pb-5 border-slate-800 flex-wrap items-center mt-7 gap-2">
         <div
@@ -213,8 +216,8 @@ duration-300
         </div>
       </div>
       <div className="mt-4">
-        <div className="text-right ">
-          <p className="text-purple-500">مهارت های نرم</p>
+        <div className=" ">
+          <p className="text-purple-500">{t.skills.soft}</p>
         </div>
         <div className="flex w-full    flex-wrap items-center mt-7 gap-2">
           <div
@@ -235,7 +238,7 @@ duration-300
 "
           >
             <LuBrain size={40} className="text-purple-400"/>
-            <p className="text-white text-sm ">حل مسأله</p>
+            <p className="text-white text-sm ">{t.skills.problem}</p>
           </div>
           <div
             className="
@@ -255,7 +258,7 @@ duration-300
 "
           >
             <HiOutlineUserGroup size={40} className="text-purple-400"/>
-            <p className="text-white text-sm ">کار تیمی</p>
+            <p className="text-white text-sm ">{t.skills.team}</p>
           </div>
           <div
             className="
@@ -275,7 +278,7 @@ duration-300
 "
           >
             <LuClock3 size={40} className="text-purple-400"/>
-            <p className="text-white text-sm ">مدیریت زمان</p>
+            <p className="text-white text-sm ">{t.skills.time}</p>
           </div>
           <div
             className="
@@ -295,7 +298,7 @@ duration-300
 "
           >
             <LuBookOpen size={40} className="text-purple-400"/>
-            <p className="text-white text-sm ">یادگیری سریع</p>
+            <p className="text-white text-sm "> {t.skills.book}</p>
           </div>
           <div
             className="
@@ -315,7 +318,7 @@ duration-300
 "
           >
             <LuMessageCircle size={40} className="text-purple-400"/>
-            <p className="text-white text-sm ">ارتباط موثر</p>
+            <p className="text-white text-sm ">{t.skills.connect}</p>
           </div>
         </div>
       </div>
