@@ -61,9 +61,7 @@ hover:-translate-y-1
                 <p className="text-slate-100 font-bold">Full Stack Developer</p>
                 <p className="text-purple-400 font-medium ">{t.exps.raya}</p>
                 <p className="text-slate-500">
-                  {language === "fa"
-                    ? "۱۴۰۴/۱۱/۰۱ - ۱۴۰۴/۰۸/۰۱"
-                    : "2026/01/21 - 2025/10/23"}
+                    "2026/01/21 - 2025/10/23
                 </p>
               </div>
             </div>
@@ -99,9 +97,7 @@ hover:-translate-y-1
                 <p className="text-slate-100 font-bold">Backend Developer</p>
                 <p className="text-purple-400 font-medium">{t.exps.mabna8}</p>
                 <p className="text-slate-500 whitespace-break-spaces">
-                  {language === "fa"
-                    ? "(همکاری پروژه‌ای) ۱۴۰۴/۰۵/۰۱ - ۱۴۰۴/۰۶/۰۱"
-                    : "(Project-based Collaboration) 2025/07/23 - 2025/08/23"}{" "}
+                    (Project-based Collaboration) 2025/07/23 - 2025/08/23"{" "}
                 </p>
               </div>
             </div>
@@ -138,9 +134,7 @@ hover:-translate-y-1
                 <p className="text-purple-400 font-medium">{t.exps.chadko}</p>
                 <p className="text-slate-500">
                   {" "}
-                  {language === "fa"
-                    ? "۱۴۰۴/۰۴/۰۱ - ۱۴۰۴/۰۳/۰۲"
-                    : "2025/05/22 - 2025/06/23"}
+                     "2025/05/22 - 2025/06/23
                 </p>
               </div>
             </div>
@@ -177,9 +171,7 @@ hover:-translate-y-1
                 <p className="text-purple-400 font-medium ">{t.exps.dehghan}</p>
                 <p className="text-slate-500">
                   {" "}
-                  {language === "fa"
-                    ? "۱۴۰۴/۰۳/۰۱ - ۱۴۰۳/۰۷/۰۱"
-                    : "2025/05/22 - 2024/09/22"}
+                     "2025/05/22 - 2024/09/22
                 </p>
               </div>
             </div>
